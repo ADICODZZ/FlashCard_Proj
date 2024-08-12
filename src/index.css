@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* In your main CSS file or a component-specific CSS file */
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+/* index.css */
+
+/* Ensure the body does not scroll horizontally */
+body {
+    overflow-x: hidden;
+  }
+  

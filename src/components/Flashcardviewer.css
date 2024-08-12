@@ -1,0 +1,14 @@
+/* Flashcardviewer.css */
+
+.flashcard-viewer-container {
+  
+  position: relative;
+  margin-left: auto;
+  
+  padding: 1rem;
+   /* Full viewport height */
+}
+
+.flashcard-slider-container {
+  
+}
