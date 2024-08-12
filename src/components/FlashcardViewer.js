@@ -42,9 +42,9 @@ const FlashcardViewer = () => {
   };
 
   return (
-    <div className="flashcard-viewer-container">
-      <h1 className="text-4xl font-bold text-center mb-8">Flashcard App</h1>
-      <div className="flashcard-slider-container bg-white">
+    <div className="flashcard-viewer-container bg-gray-900 ">
+      <h1 className="text-4xl font-bold text-center mb-8 text-white">Flashcard App</h1>
+      <div className="flashcard-slider-container bg-gray-900">
         {flashcards.length > 0 ? (
           <Slider {...settings} paused={paused}>
             {flashcards.map((flashcard) => (

@@ -2,7 +2,7 @@ import React, { useState, useContext, useEffect } from 'react';
 import { FlashcardContext } from './FlashcardContext';
 import axios from 'axios';
 
-const Dashboard = ({ onClose }) => {
+const Dashboard = ({  }) => {
   const [activeFeature, setActiveFeature] = useState(null);
   const [flashcardData, setFlashcardData] = useState({ question: '', answer: '' });
   const [selectedQuestion, setSelectedQuestion] = useState('');
@@ -72,8 +72,8 @@ const Dashboard = ({ onClose }) => {
   };
 
   return (
-    <div className="h-full p-6 bg-gray-800 text-white overflow-auto relative">
-      <button onClick={onClose} className="absolute top-4 right-4 p-2 bg-red-600 rounded-full hover:bg-red-700">X</button>
+    <div className="h-full p-6  bg-gray-800 text-white overflow-auto relative">
+      
       <h2 className="text-2xl font-bold mb-4">Dashboard</h2>
       <div className="flex flex-col space-y-4">
         <button onClick={() => setActiveFeature('add')} className="p-3 bg-green-600 rounded-lg shadow hover:bg-green-700 transition duration-300">
@@ -89,7 +89,7 @@ const Dashboard = ({ onClose }) => {
 
       {/* Add Flashcard Modal */}
       {activeFeature === 'add' && (
-        <div className="flex items-center justify-center bg-gray-700 ">
+        <div className="flex items-center gap-2 mt-6 justify-center bg-gray-700 ">
           <div className="bg-white p-6 rounded-lg shadow-lg w-80 md:w-96 relative">
             <h3 className="text-xl font-semibold mb-4">Add Flashcard</h3>
             <input
@@ -118,7 +118,7 @@ const Dashboard = ({ onClose }) => {
 
       {/* Edit Flashcard Modal */}
       {activeFeature === 'edit' && (
-        <div className="flex items-center justify-center bg-gray-700 bg-opacity-50">
+        <div className="flex items-center mt-6 justify-center bg-gray-700 bg-opacity-50">
           <div className="bg-white p-6 rounded-lg shadow-lg w-80 md:w-96 relative">
             <h3 className="text-xl font-semibold mb-4">Edit Flashcard</h3>
             <select
@@ -159,7 +159,7 @@ const Dashboard = ({ onClose }) => {
 
       {/* Delete Flashcard Modal */}
       {activeFeature === 'delete' && (
-        <div className="flex items-center justify-center bg-gray-700 bg-opacity-50">
+        <div className="flex items-center mt-6 justify-center bg-gray-700 bg-opacity-50">
           <div className="bg-white p-6 rounded-lg shadow-lg w-80 md:w-96 relative">
             <h3 className="text-xl font-semibold mb-4">Delete Flashcard</h3>
             <select

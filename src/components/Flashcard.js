@@ -40,10 +40,10 @@ const Flashcard = ({ question, correctAnswer }) => {
         
       >
         <div className={`flip-card w-full h-full ${isFlipped ? 'flip' : ''}`}>
-          <div className="flip-card-inner">
+          <div className="flip-card-inner ">
             {/* Front Side */}
-            <div className="flip-card-front bg-blue-500 text-white flex flex-col items-center justify-center p-4 rounded-lg shadow-lg backface-hidden">
-              <h2 className="text-2xl font-semibold mb-4">Question</h2>
+            <div className="flip-card-front bg-gray-600 text-white flex flex-col items-center gap-6 justify-center p-4 rounded-lg shadow-lg backface-hidden">
+              <h2 className="text-2xl font-semibold -mt-6">Question</h2>
               <p className="text-lg mb-4">{question}</p>
               <input
                 

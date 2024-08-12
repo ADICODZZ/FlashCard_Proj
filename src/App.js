@@ -15,14 +15,14 @@ const App = () => {
     <FlashcardProvider>
       <div className="flex h-92 max-w-screen">
         {/* Sidebar (Dashboard) */}
-        <div className='w-[30%]'       >
+        <div className='w-[20%]'       >
           
 
           <Dashboard onClose={() => setDashboardVisible(false)} />
         </div>
 
         {/* Main Content Area */}
-        <div className='w-[70%]'>
+        <div className='w-[80%]'>
           
         
           <FlashcardViewer />
