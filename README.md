@@ -1,4 +1,5 @@
 # Getting Started with Create React App
+only the frontend part is deployed , backend is not deployed
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
